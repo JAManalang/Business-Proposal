@@ -1,0 +1,119 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../font/SFPRODISPLAYREGULAR.OTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Body and Main Layout */
+body {
+    font-family: 'SF Pro Display', sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+.logo img {
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Main Content */
+main {
+    flex: 1; /* Allows the main content to stretch and push the footer down */
+    padding: 40px 0;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    max-width: 50%;
+}
+
+.contact-info h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #aaa;
+}
+
+.map-container {
+    max-width: 50%;
+}
+
+.map-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #888;
+    margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+footer .social a {
+    color: #888;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer .social a:hover {
+    color: #ff6600;
+}
